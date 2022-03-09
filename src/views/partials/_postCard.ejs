@@ -1,0 +1,12 @@
+<div class="card">
+  <img
+    src="<%- post.yoast_head_json.og_image[0].url%>"
+    class="card-img-top img-fluid"
+    alt="<%-post.title.rendered %>"
+  />
+  <div class="card-body">
+    <h6 class="card-title text-info"><%-post.title.rendered %></h6>
+    <p class="card-text"><%-post.excerpt.rendered.substring(0,200)%>...</p>
+    <a class="text-warning" href="#">Read more</a>
+  </div>
+</div>
