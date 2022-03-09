@@ -6,6 +6,8 @@ const ejs = require('ejs');
 const path = require('path');
 const blogRouter = require('./src/routers/blog_router');
 const expressLayouts = require('express-ejs-layouts');
+
+app.use(express.static('public'));
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, './src/views'));
