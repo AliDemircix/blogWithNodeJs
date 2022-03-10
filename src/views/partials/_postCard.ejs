@@ -5,8 +5,11 @@
     alt="<%-post.title.rendered %>"
   />
   <div class="card-body">
-    <h6 class="card-title text-info"><%-post.title.rendered %></h6>
-    <p class="card-text"><%-post.excerpt.rendered.substring(0,200)%>...</p>
-    <a class="text-warning" href="#">Read more</a>
+    <h6 class="card-title">
+      <a class="text-info text-uppercase" href="/<%- post.id %> "
+        ><%-post.title.rendered %></a
+      >
+    </h6>
+    <p class="card-text"><%-post.excerpt.rendered.substring(0,160)%>...</p>
   </div>
 </div>
