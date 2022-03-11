@@ -1,6 +1,6 @@
 <div class="card">
   <img
-    src="<%- post.yoast_head_json.og_image[0].url%>"
+    src="<%-post.yoast_head_json.og_image ? post.yoast_head_json.og_image[0].url : 'https://www.twowanderingsoles.com/wp-content/uploads/2015/08/img_60eea6d9dd41d.jpg'%>"
     class="card-img-top img-fluid"
     alt="<%-post.title.rendered %>"
   />

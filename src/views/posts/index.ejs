@@ -3,3 +3,6 @@
   <% posts.forEach((post,i) => { %>
   <%-include('../partials/_postCard',{post,i})%> <% }) %>
 </div>
+<% const totalPages = pagination['x-wp-totalpages']; const paginationContent =
+pagination['x-wp-total']; const newPage = activePage %>
+<%-include('../partials/_pagination',{totalPages,paginationContent,newPage}) %>
